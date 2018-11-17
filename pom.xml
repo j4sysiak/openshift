@@ -40,6 +40,15 @@
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.0.0</version>
+					      <configuration>
+						<archive>
+							<manifest>
+							<addClasspath>true</addClasspath>
+								<classpathPrefix>lib/</classpathPrefix>
+								<mainClass>com.example.test.Test</mainClass>
+							</manifest>
+						</archive>
+					</configuration>
 				</plugin>
 				<!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
 				<plugin>
